@@ -22,7 +22,7 @@ form.addEventListener('submit', function(event){
     }
     // menambah element dan menjalankan function mark ketika checkbox onchange
     
-    all.insertAdjacentHTML('beforeend', `<li><input type="checkbox" onchange=mark(this)><span></span> ${keyword.value.replace(/^./, keyword.value[0].toUpperCase())} <button class="close" onclick=hapus(this)><img src="images/icon-cross.svg" alt="close"></button></li>`)    
+    all.insertAdjacentHTML('beforeend', `<li><input type="checkbox" onchange=mark(this)><span></span> ${keyword.value.replace(/^./, keyword.value[0].toUpperCase())} <button class="close" onclick=hapus(this)><img src="todo-app-main/images/icon-cross.svg" alt="close"></button></li>`)    
     // reset value keyword
     keyword.value = ''
 })
