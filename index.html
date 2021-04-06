@@ -26,10 +26,11 @@
   <div class="container">
     <div class="judul">
       <h1>TODO</h1>
-      <button class="mod"><img src="todo-app-main/images/icon-sun.svg" alt=""></button>
+      <button class="mod" aria-label="mode" aria-labelledby="mode"><img src="todo-app-main/images/icon-sun.svg" alt=""></button>
     </div>
-    <form>
-      <input type="text" name="" id="keyword" class="keyword" placeholder="Create a new todo...">
+     <form aria-label="form">
+      <input type="text" name="" id="keyword" class="keyword" placeholder="Create a new todo..." title="to do" aria-label="to do" aria-labelledby="input">
+      <button type="submit" style="display: none;"></button>
     </form>
     <ul class="todo-list">
       <div class="alls tampil"></div>
